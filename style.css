@@ -1,0 +1,88 @@
+
+
+body,
+html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+    margin: 0px;
+}
+
+.topNav .navBar{
+    overflow:hidden;
+    background-color: white;
+}
+
+.topNav .navBar a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px 10px;
+    font-size: 15px;
+}
+
+.topNav .navBar a:hover{
+    background-color: darkgray;
+    color: black;
+}
+
+/* Create a Parallax Effect */
+#bgimg-1,
+.bgimg-2,
+.bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+#bgimg-1 {
+    background-image: url('./photos/MicPattern.jpg');
+    min-height: 60%;
+    opacity: 0.8;
+    align-items: center;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("./photos/recording-studio-1024x640.jpg");
+    min-height: 60%;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("./photos/recording-studio-microphone00.jpg");
+    min-height: 60%;
+}
+
+.episodes {
+    letter-spacing: 10px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+#about,
+#episodes,
+#contact{
+    margin: 8px;
+}
+
+p{
+    font-family: monospace;
+    font-size: 15px;
+
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+    }
+}
